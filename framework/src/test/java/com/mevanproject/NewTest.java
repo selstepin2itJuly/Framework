@@ -29,11 +29,11 @@ public class NewTest extends BaseClass{
 	
 	
   @Test(dataProvider="getdata")
-  public void f(String emaile, String pass) throws Exception {
+  public void f(String email, String pass) throws Exception {
 	
 	  LoginPage log=new LoginPage(driver);
 	
-      log.email1().sendKeys(emaile);
+      log.email1().sendKeys(email);
 	log.pass().sendKeys(pass);
 	Thread.sleep(3000);
 	log.LogInButton().submit();
